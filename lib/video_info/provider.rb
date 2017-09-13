@@ -114,9 +114,7 @@ class VideoInfo
     end
 
     def _set_video_id_from_url
-      puts "hey"
       @url.gsub(_url_regex) { |match|
-        puts match
         @video_id = $1 || $2 || $3
       }
       unless _valid_video_id?
