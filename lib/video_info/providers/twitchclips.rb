@@ -9,7 +9,7 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url =~ %r{(clips\.twitch\.tv\/videos\/.*)}x
+        url =~ %r{(clips\.twitch\.tv\/.*)}x
       end
 
       def provider
@@ -39,7 +39,7 @@ class VideoInfo
       private
 
       def _url_regex
-        %r{videos\/([a-zA-Z0-9]*)}x
+        %r{(clips\.twitch\.tv\/[a-zA-Z0-9]*)}x
       end
 
       def _default_iframe_attributes
