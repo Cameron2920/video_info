@@ -39,7 +39,7 @@ class VideoInfo
       private
 
       def _url_regex
-        %r{(clips\.twitch\.tv\/[a-zA-Z0-9]*)}x
+        %r{clips\.twitch\.tv\/([a-zA-Z0-9]*)}x
       end
 
       def _default_iframe_attributes
